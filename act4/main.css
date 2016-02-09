@@ -6,27 +6,67 @@ ul {
   list-style-type: none;
   text-align: center;
 }
+ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
 li {
   display: inline-block;
   margin: 0px 20px;
 
 }
-a {
+span
+{
+    font-size: 20px
+}
+.link {
   color: #ffffff;
   text-decoration: none;
 }
+.blogroll li{
+    text-decoration-line: underline;
+    text-align: left;
+}
+ ul li:hover{
+        color: #fff;
+        background: #ff5050;
+    }
+    ul li ul.dropdown{
+        min-width: 125px; /* Set width of the dropdown */
+        background: #ff5050;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        right: 0;
+    }
+ul li:hover ul.dropdown{
+        display: block;
+        color: antiquewhite;
+    }
+    ul li ul.dropdown li{
+        display: block;
+        border: 2px;
+        padding: 2px;
+        margin: 2px;
+        border-radius: 20px;
+    }
 .left-post {
   float: left;
   padding: 100px 0px;
-  width: 500px;
+  width: 50%;
 }
 .right-post {
   float: right;
+    width: 50%;
+    margin-top: 100px;
 }
 .navbar {
   background: #0066ff;
   border-radius: 20px;
-  display: inline-block;
+  
   text-align: left;
   padding: 5px;
 }
@@ -55,14 +95,40 @@ text-align: left;
   background: #ffffcc;
   padding: 10px;
   width: 40%;
-  margin: 10px;
+  float:right;
+  margin-top: 100px;
   display: inline-block;
+    height: auto;
 }
 .container {
 width: 768px;
 border-radius: 20px;
 padding: 10px;
-align-self: center;
+align-content: center
 display: inline-block;
 margin: 0 auto;
+}
+.twitter {
+    background-color: aqua;
+}
+.rss {
+    background-color:  chocolate;
+    margin-bottom: 20px;
+}
+.quote {
+    font-size: 20px;
+    text-align: justify;
+    padding: inherit;
+    margin-bottom: 20px;
+}
+.author {
+    color: red;
+    font-size: 40px;
+}
+.read {
+    background: red;
+    border-radius: 20px;
+    color: aliceblue;
+    padding: 5px;
+    float: right;
 }
