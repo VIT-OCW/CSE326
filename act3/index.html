@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<title> Forms using CSS </title>
+<style>
+body{
+	font-family: Georgia;
+	margin: 20%;
+	}
+h2{
+	text-align: center;
+	}
+#body{
+		background-color: #80dfff;
+		border: 2px solid green;
+		border-radius: 20px;
+		
+	}
+	form{
+		}
+#reg, select{
+		border: 2px solid green;
+		align: right;
+		width: 50%
+	}
+span {
+		border: 2px solid green;
+		text-align: right;
+		display: inline-block;
+		width: 40%;
+		text-align: right;
+		margin-bottom: 20px;
+		margin: 10px;
+	}
+	textarea {
+		border: 2px solid green;
+		display: inline-block;
+		width: 94%;
+		margin-bottom: 20px;
+		margin: 10px;
+	}
+#submit {
+		 border: 2px white;
+		 background-color: #003300;
+		 color: #ffffff;
+		 margin-left: 30%;
+		 margin-right: 20%;
+		 margin-bottom: 20px;
+		 height: 35px;
+		 padding-left: 40px;
+		 padding-right: 40px;
+		 text-align: center;
+		 display: inline-block;
+		 width: 40%;
+		 }
+</style>
+<body>
+<div id="body">
+<h2> Course Information </h2>
+<form>
+<span>Name:</span> <input id="reg" type="text" name="name"> <br>
+<span>Email:</span> <input id="reg" type="email" name="email"><br>
+<span>Gender:</span> <select name="Gender">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="none">None</option>
+			<option value="no_disclose">I prefer not to disclose</option>
+		</select> <br>
+<span>Date of Birth:</span> <input id="reg" type="date" name="dob"> <br>
+<span>Course Name:</span> <input id="reg" type="text" name="course"> <br>
+<span>Course Code:</span> <input id="reg" type="text" name="code"> <br>
+<span>Slot:</span> <select name="slot">
+			<option value="l2324"> L23 + L24 </option>
+			<option value="l12"> L01 + L02 </option>
+			<option value="l0910"> L09 + L10 </option>
+		</select> <br>
+<span>Mobile Number:</span> <input id="reg" type="tel" name="mobile"> <br>
+<textarea name"remarks" rows="1" cols="60%" placeholder="Remarks"></textarea>
+<input id="submit" type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
