@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<header> <h2>HTML FORMS </h2></header>
+<body>
+
+<form action="\php\index.php" method="post"  target="_blank" accept-charset="UTF-8"
+enctype="application/x-www-form-urlencoded" autocomplete="on">
+	<fieldset>
+	<legend> Basic Information </legend>
+	First Name: <br>
+	<input type="text" name="firstname"><br>
+	Last Name: <br>
+	<input type="text" name="lastname"><br>
+	Email ID: <br>
+	<input type="email" name="emailid"><br>
+	Contact Number: <br>
+	<input type="tel" name"phone"><br>
+	Date Of Birth: <br>
+	<input type="date" name="dob"><br>
+	</fieldset>
+	<fieldset>
+	<legend>Course information</legend>
+	Course: <br>
+	<select name="course">
+		<option value="cse"> Computer Science and Engineering</option>
+		<option value="ece"> Electronics and Communication Engineering</option>
+		<option value="mech"> Mechanical Engineering</option>
+		<option value="bio"> BioTechnology </option>
+	</select>
+	<br>
+	Write your comments on the course: <br>
+	<textarea name="comments" rows="20" cols="30">
+	</textarea>
+	<br>
+	Year of Study: <br>
+	<input type="text" name="yos"><br>
+	</fieldset>
+	
+	
+	<fieldset>
+	<legend> Security Information </legend>
+	Username: <br>
+	<input type="text" name="username"><br>
+	Password: <br>
+	<input type="password" name="p1" maxlength="10"><br>
+	Repeat Password: <br>
+	<input type="password" name="p2" maxlength="10"><br>
+	
+	</fieldset>
+	<fieldset>
+	<legend>Select all the options which apply</legend>
+	<input type="checkbox" name="course1" value="OOPS"> OOPS <br>
+	<input type="checkbox" name="course2" value="DSA"> DSA <br>
+	<input type="checkbox" name="course3" value="Spanish"> Spanish <br>
+	</fieldset>
+	<input type="submit" value="Submit"><br>
+	<input type="button" onclick="alert('You support Net Neutrality!')" value="Net Neutrality"> I support Net Neutrality <br>
+	<input type="file" value="upload resume"> Upload resume <br>
+</form>
+</body>
+</html>
