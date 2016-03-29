@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title> Forms using PHP and MySQL </title>
+<style>
+body{
+	font-family: Georgia;
+	margin: 20%;
+	}
+h2{
+	text-align: center;
+	}
+#body{
+		background-color: #80dfff;
+		border: 2px solid green;
+		border-radius: 20px;
+		
+	}
+	form{
+		}
+#reg, select{
+		border: 2px solid green;
+		align: right;
+		width: 50%
+	}
+span {
+		border: 2px solid green;
+		text-align: right;
+		display: inline-block;
+		width: 40%;
+		text-align: right;
+		margin-bottom: 20px;
+		margin: 10px;
+	}
+	textarea {
+		border: 2px solid green;
+		display: inline-block;
+		width: 94%;
+		margin-bottom: 20px;
+		margin: 10px;
+	}
+#submit {
+		 border: 2px white;
+		 background-color: #003300;
+		 color: #ffffff;
+		 margin-left: 30%;
+		 margin-right: 20%;
+		 margin-bottom: 20px;
+		 height: 35px;
+		 padding-left: 40px;
+		 padding-right: 40px;
+		 text-align: center;
+		 display: inline-block;
+		 width: 40%;
+		 }
+</style>
+<body>
+<div id="body">
+<h2> Course Information </h2>
+<form action="main.php">
+<span>Poll ID:</span> <input id="reg" type="number" name="poll_id"> <br>
+<span>Poll Start Date</span> <input id="reg" type="date" name="start_Date"><br>
+<span>Poll End Date</span> <input id="reg" type="date" name="end_Date"><br>
+<textarea name"question" rows="1" cols="60%" placeholder="Poll Question"></textarea>
+<span>Poll Choice</span> <select name="Poll Choice">
+			<option value="option_1">option 1</option>
+			<option value="option_2">option 2</option>
+			<option value="option_3">option 3</option>
+			<option value="nota">NOTA</option>
+		</select> <br>
+
+<input id="submit" type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>

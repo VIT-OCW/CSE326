@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style>
+	input, select {
+		display: inline-block;
+		width: 100%;
+		padding: 10px;
+		margin-top: 10px;
+	}
+	input[type="submit"]
+	{
+		border-radius: 10px;
+		display: inline-block;
+		padding: 8px;
+		background-color: green;
+		background-blend-mode: color-burn;
+	}
+</style>
+<head>
+	<title> VIT University Student Information</title>
+</head>
+<body>
+<form id='form' action="main.php" method="post">
+	<span> Name: </span> <input type="text" name="Name"> <br>
+	<span> Registration Number: </span> <input type="text" name="regno" pattern="([0-9]{2})([A-Za-z]{3})([0-9]{4})"> <br>
+	<span> Gender: </span><br>
+	<span> Male </span> <input type="radio" name="gender" value="male">
+	<span> Female </span> <input type="radio" name="gender" value="female"> <br>
+	<span> Email ID: </span> <input type="email" name="email"> <br>
+	<span> Phone Number: </span><input type="number" name="phone"> <br>
+	<span> Branch: </span> <select name="branch">
+		<option value="CSE">CSE</option>
+		<option value="ECE">ECE</option>
+		<option value="Mech">Mechanical</option>
+		<option value="EEE"> EEE </option>
+	</select>
+	<input type="submit" value="Submit Information">
+</form>
+
+
+</body>
+</html>
